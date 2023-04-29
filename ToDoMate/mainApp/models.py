@@ -5,6 +5,7 @@ class Schedule(models.Model):
 
     title = models.CharField(max_length=30)
     content = models.TextField()
-    schedule_date = models.DateTimeField()
+    month = models.IntegerField(null=False,default=4)
+    day = models.IntegerField(null=False,default=10)
     remind_date = models.IntegerField()
-    isActive = models.BooleanField()
+    is_active = models.BooleanField()
