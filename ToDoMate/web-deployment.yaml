@@ -6,12 +6,12 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: MyApp
+      app: webserver
   template:
     metadata:
       name: webserver
       labels:
-        app: MyApp
+        app: webserver
     spec:
       containers:
         - name: webserver
